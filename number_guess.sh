@@ -16,7 +16,7 @@ number=$(( $RANDOM % 50 + 1 ))
 count=1
 echo "Guess the secret number between 1 and 1000:"
 read guess
-while  [[ ! $guess =~ ^[0-9]+$ ]]; do
+while  [[ ! $guess =~ ^[0-9]+$ ]]; do        #https://stackoverflow.com/questions/28957568/check-whether-input-is-number-or-not-in-bash
   echo "That is not an integer, guess again:"
   read guess
 done
